@@ -6,29 +6,29 @@ const existsLabel = require('./github/exists-label');
 const getLabelConfig = (tools) => {
   const labelConfig = [
     {
-      name: 'size_xs',
+      name: 'SIZE: very small',
       size: tools.inputs.xs_max_size,
       color: 'abdee6',
     },
     {
-      name: 'size_s',
+      name: 'SIZE: small',
       size: tools.inputs.s_max_size,
-      color: 'cbaacb',
+      color: 'abdee6',
     },
     {
-      name: 'size_m',
+      name: 'SIZE: medium',
       size: tools.inputs.m_max_size,
-      color: 'ffaea5',
+      color: 'abdee6',
     },
     {
-      name: 'size_l',
+      name: 'SIZE: large',
       size: tools.inputs.l_max_size,
-      color: 'ffffb5',
+      color: 'abdee6',
     },
     {
-      name: 'size_xl',
+      name: 'SIZE: very large',
       size: Infinity,
-      color: 'cce2cb',
+      color: 'abdee6',
     },
   ];
   return labelConfig;
