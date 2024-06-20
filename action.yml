@@ -20,12 +20,6 @@ inputs:
 runs:
   using: 'node20'
   main: 'main.js'
-  args:
-    - ${{ inputs.xs_max_size }}
-    - ${{ inputs.s_max_size }}
-    - ${{ inputs.m_max_size }}
-    - ${{ inputs.l_max_size }}
-    - ${{ inputs.exclude_files }}
 branding:
   icon: 'tag'
   color: 'red'
