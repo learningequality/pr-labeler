@@ -18,8 +18,8 @@ inputs:
     description: 'Report GitHub Workflow failure if the PR size is xl allowing to forbid PR merge'
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'node20'
+  main: 'main.js'
   args:
     - ${{ inputs.xs_max_size }}
     - ${{ inputs.s_max_size }}
